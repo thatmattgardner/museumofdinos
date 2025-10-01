@@ -12,14 +12,13 @@ const FOSSILS = [
     id: "trex-skull",
     name: "T. rex Skull",
     emoji: "🦖",
-    svg: (
-      <svg viewBox="0 0 200 120" className="w-full h-40">
-        <rect x="6" y="20" width="188" height="80" rx="10" className="fill-stone-200" />
-        <path d="M20 80 C40 20, 160 20, 180 80" className="fill-none stroke-stone-600" strokeWidth="5" />
-        <circle cx="60" cy="55" r="6" className="fill-stone-600" />
-        <path d="M40 85 L70 85 M90 85 L120 85 M140 85 L165 85" className="stroke-stone-600" strokeWidth="5" />
-      </svg>
-    ),
+    image: {
+      src: "https://commons.wikimedia.org/wiki/Special:FilePath/T_rex_skull.jpg",
+      alt: "Photo of a Tyrannosaurus rex skull in a museum display case",
+      credit: "Wikimedia Commons – Public Domain (CC0)",
+      source: "T rex skull.jpg",
+      license: "CC0 / Public Domain",
+    },
     shortFact:
       "This giant skull came from a meat‑eating dinosaur. Its teeth were as long as bananas!",
     details:
@@ -30,31 +29,30 @@ const FOSSILS = [
     id: "triceratops-frill",
     name: "Triceratops Frill",
     emoji: "🦕",
-    svg: (
-      <svg viewBox="0 0 200 120" className="w-full h-40">
-        <rect x="6" y="20" width="188" height="80" rx="10" className="fill-stone-200" />
-        <path d="M30 90 C60 20, 140 20, 170 90 Z" className="fill-stone-400" />
-        <circle cx="60" cy="70" r="6" className="fill-white" />
-        <circle cx="140" cy="70" r="6" className="fill-white" />
-      </svg>
-    ),
+    image: {
+      src: "https://commons.wikimedia.org/wiki/Special:FilePath/Triceratops%2C%20American%20Museum%20of%20Natural%20History%20(7171354635).jpg",
+      alt: "Close-up photo of a Triceratops skull showing the frill and two long brow horns",
+      credit: "Wikimedia Commons / CC BY 2.0",
+      source: "Triceratops, American Museum of Natural History (7171354635).jpg",
+      license: "CC BY 2.0",
+    },
     shortFact:
       "This wide frill and three horns helped Triceratops stay safe and look big.",
     details:
-      "Triceratops had two long brow horns and one nose horn. The frill protected its neck. It ate plants and lived at the end of the Cretaceous period.",
+      "Triceratops had two long brow horns and one nose horn. The frill protected its neck. It ate plants and lived near the end of the Cretaceous period.",
     howToSay: "try-SAIR-uh-tops",
   },
   {
     id: "stegosaurus-plate",
     name: "Stegosaurus Plate",
     emoji: "🦕",
-    svg: (
-      <svg viewBox="0 0 200 120" className="w-full h-40">
-        <rect x="6" y="20" width="188" height="80" rx="10" className="fill-stone-200" />
-        <path d="M80 95 C90 70, 110 50, 120 95 Z" className="fill-stone-500" />
-        <path d="M60 95 C70 75, 90 60, 100 95 Z" className="fill-stone-400" />
-      </svg>
-    ),
+    image: {
+      src: "https://commons.wikimedia.org/wiki/Special:FilePath/Stegosaurus_dorsal_plate_-_Museum_of_the_Rockies_-_2013-07-08.jpg",
+      alt: "Photograph of a fossil Stegosaurus back plate in a museum",
+      credit: "Wikimedia Commons / likely CC BY-SA (check file page)",
+      source: "Stegosaurus dorsal plate - Museum of the Rockies - 2013-07-08.jpg",
+      license: "See file page",
+    },
     shortFact:
       "Plates on a Stegosaurus’s back may have helped it stay warm or look extra cool!",
     details:
@@ -65,12 +63,13 @@ const FOSSILS = [
     id: "velociraptor-claw",
     name: "Velociraptor Claw",
     emoji: "🦅",
-    svg: (
-      <svg viewBox="0 0 200 120" className="w-full h-40">
-        <rect x="6" y="20" width="188" height="80" rx="10" className="fill-stone-200" />
-        <path d="M60 90 C80 60, 120 50, 150 80" className="fill-none stroke-stone-700" strokeWidth="10" strokeLinecap="round" />
-      </svg>
-    ),
+    image: {
+      src: "https://commons.wikimedia.org/wiki/Special:FilePath/Moulage%20d%27une%20griffe%20de%20velociraptor.JPG",
+      alt: "Photo of a curved Velociraptor toe claw fossil cast",
+      credit: "Wikimedia Commons / see file page",
+      source: "Moulage d'une griffe de velociraptor.JPG",
+      license: "See file page",
+    },
     shortFact:
       "This curved claw was like a sharp hook. Velociraptor used it to hold on to prey.",
     details:
@@ -81,22 +80,93 @@ const FOSSILS = [
     id: "ammonite-fossil",
     name: "Ammonite Fossil",
     emoji: "🐚",
-    svg: (
-      <svg viewBox="0 0 200 120" className="w-full h-40">
-        <rect x="6" y="20" width="188" height="80" rx="10" className="fill-stone-200" />
-        <path d="M100 60 m -35 0 a 35 35 0 1 0 70 0 a 35 35 0 1 0 -70 0" className="fill-none stroke-stone-700" strokeWidth="6" />
-        <path d="M100 60 m -5 0 a 5 5 0 1 0 10 0 a 5 5 0 1 0 -10 0" className="fill-stone-700" />
-      </svg>
-    ),
+    image: {
+      src: "https://commons.wikimedia.org/wiki/Special:FilePath/Ammonite_2582.jpg",
+      alt: "Close-up photo of a spiral ammonite fossil shell",
+      credit: "Wikimedia Commons – Public Domain",
+      source: "Ammonite 2582.jpg",
+      license: "Public Domain",
+    },
     shortFact:
       "Ammonites were ocean animals with coiled shells. They are related to today’s squids and octopuses.",
     details:
       "Ammonites lived in seas all over the world. Their spiral shells grew bigger as they grew. Many were wiped out when dinosaurs went extinct.",
     howToSay: "AM-uh-nite",
   },
-];
-
-const Palette = {
+  {
+    id: "ankylosaurus-club",
+    name: "Ankylosaurus Tail Club",
+    emoji: "🔨",
+    image: {
+      src: "https://commons.wikimedia.org/wiki/Special:FilePath/Ankylosaurus_tail_club.jpg",
+      alt: "Photo of an Ankylosaurus tail club fossil",
+      credit: "Wikimedia Commons / see file page",
+      source: "Ankylosaurus tail club.jpg",
+      license: "See file page",
+    },
+    shortFact:
+      "This tail ended in a heavy club. Big adults could swing it hard—like a living hammer!",
+    details:
+      "Ankylosaurus was covered in bony armor. Scientists think it used its tail to scare enemies or to push and whack during dino disagreements.",
+    howToSay: "ANG-kye-low-SORE-us",
+  },
+  {
+    id: "parasaurolophus-crest",
+    name: "Parasaurolophus Crest",
+    emoji: "📯",
+    image: {
+      src: "https://commons.wikimedia.org/wiki/Special:FilePath/Parasaurolophus_tubicen_crest.jpg",
+      alt: "Photo of a Parasaurolophus skull showing the long tube-like crest",
+      credit: "Wikimedia Commons / see file page",
+      source: "Parasaurolophus tubicen crest.jpg",
+      license: "See file page",
+    },
+    shortFact:
+      "This tube‑shaped crest may have helped make deep, low sounds—like a dino trumpet!",
+      details:
+      "Parasaurolophus was a plant‑eater with a very long, hollow crest connected to its nose. Air moving through the crest may have made sounds for calls.",
+    howToSay: "pair-uh-sore-AH-lo-fuss",
+  },
+  {
+    id: "pteranodon-skeleton",
+    name: "Pteranodon Skeleton",
+    emoji: "🪶",
+    image: {
+      src: "https://commons.wikimedia.org/wiki/Special:FilePath/UCMP_Pteranodon_left.JPG",
+      alt: "Skeleton of a Pteranodon with long wings in a museum",
+      credit: "Wikimedia Commons / Own work (see file)",
+      source: "UCMP Pteranodon left.JPG",
+      license: "See file page",
+    },
+    shortFact:
+      "Pteranodon was a flying reptile. It wasn’t a dinosaur, but it lived at the same time!",
+    details:
+      "Pteranodon had huge wings and a long head crest. It soared over ancient seas looking for fish.",
+    howToSay: "teh-RAN-uh-don",
+  },
+  {
+    id: "plesiosaur-vertebra",
+    name: "Plesiosaur Vertebra",
+    emoji: "🌊",
+    image: {
+      src: "https://commons.wikimedia.org/wiki/Special:FilePath/Opalized_fossil_plesiosaur_vertebra_(Australia).jpg",
+      alt: "Bright opalized vertebra from a plesiosaur",
+      credit: "Wikimedia Commons / see file page",
+      source: "Opalized fossil plesiosaur vertebra (Australia).jpg",
+      license: "See file page",
+    },
+    shortFact:
+      "Plesiosaurs swam with four strong flippers. This shiny bone is a single back bone (vertebra).",
+    details:
+      "Plesiosaurs were ocean reptiles with long necks and powerful paddles. Some fossils in Australia turned into colorful opal!",
+    howToSay: "PLEE-zee-oh-sore",
+  },
+  {
+    id: "diplodocus-bones",
+    name: "Diplodocus Tail Bones",
+    emoji: "🦴",
+    image: {
+      src: "https://commons.wikimedian  {\n    id: \"ankylosaurus-club\",\n    name: \"Ankylosaurus Tail Club\",\n    emoji: \"🔨\",\n    image: {\n      src: \"https://commons.wikimedia.org/wiki/Special:FilePath/Ankylosaurus_tail_club.jpg\",\n      alt: \"Photo of an Ankylosaurus tail club fossil\",\n      credit: \"Wikimedia Commons / see file page\",\n      source: \"Ankylosaurus tail club.jpg\",\n      license: \"See file page\",\n    },\n    shortFact:\n      \"This tail ended in a heavy club. Big adults could swing it hard—like a living hammer!\",\n    details:\n      \"Ankylosaurus was covered in bony armor. Scientists think it used its tail to scare enemies or to push and whack during dino disagreements.\",\n    howToSay: \"ANG-kye-low-SORE-us\",\n  },\n  {\n    id: \"parasaurolophus-crest\",\n    name: \"Parasaurolophus Crest\",\n    emoji: \"📯\",\n    image: {\n      src: \"https://commons.wikimedia.org/wiki/Special:FilePath/Parasaurolophus_tubicen_crest.jpg\",\n      alt: \"Photo of a Parasaurolophus skull with long tube-like crest\",\n      credit: \"Wikimedia Commons / see file page\",\n      source: \"Parasaurolophus tubicen crest.jpg\",\n      license: \"See file page\",\n    },\n    shortFact:\n      \"This tube‑shaped crest may have helped make deep, low sounds—like a dino trumpet!\",\n    details:\n      \"Parasaurolophus was a plant‑eater with a very long, hollow crest connected to its nose. Air moving through the crest may have made sounds for calls.\",\n    howToSay: \"pair-uh-sore-AH-lo-fuss\",\n  },\n  {\n    id: \"pteranodon-skeleton\",\n    name: \"Pteranodon Skeleton\",\n    emoji: \"🪶\",\n    image: {\n      src: \"https://commons.wikimedia.org/wiki/Special:FilePath/UCMP_Pteranodon_left.JPG\",\n      alt: \"Skeleton of a Pteranodon with long wings in a museum\",\n      credit: \"Wikimedia Commons / Own work (see file)\",\n      source: \"UCMP Pteranodon left.JPG\",\n      license: \"See file page\",\n    },\n    shortFact:\n      \"Pteranodon was a flying reptile. It wasn’t a dinosaur, but it lived at the same time!\",\n    details:\n      \"Pteranodon had huge wings and a long head crest. It soared over ancient seas looking for fish.\",\n    howToSay: \"teh-RAN-uh-don\",\n  },\n  {\n    id: \"plesiosaur-vertebra\",\n    name: \"Plesiosaur Vertebra\",\n    emoji: \"🌊\",\n    image: {\n      src: \"https://commons.wikimedia.org/wiki/Special:FilePath/Opalized_fossil_plesiosaur_vertebra_(Australia).jpg\",\n      alt: \"Bright opalized vertebra from a plesiosaur\",\n      credit: \"Wikimedia Commons / see file page\",\n      source: \"Opalized fossil plesiosaur vertebra (Australia).jpg\",\n      license: \"See file page\",\n    },\n    shortFact:\n      \"Plesiosaurs swam with four strong flippers. This shiny bone is a single back bone (vertebra).\",\n    details:\n      \"Plesiosaurs were ocean reptiles with long necks and powerful paddles. Some fossils in Australia turned into colorful opal!\",\n    howToSay: \"PLEE-zee-oh-sore\",\n  },\n  {\n    id: \"diplodocus-bones\",\n    name: \"Diplodocus Tail Bones\",\n    emoji: \"🦴\",\n    image: {\n      src: \"https://commons.wikimedia.org/wiki/Special:FilePath/Diplodocus_sp._(sauropod_dinosaur_tail_bones)_(Morrison_Formation,_Upper_Jurassic;_Carnegie_Quarry,_Dinosaur_National_Monument,_Utah,_USA)_17_(48719495002).jpg\",\n      alt: \"Row of connected tail vertebrae from Diplodocus in rock\",\n      credit: \"Wikimedia Commons / see file page\",\n      source: \"Diplodocus sp. (sauropod dinosaur tail bones) ... 17 (48719495002).jpg\",\n      license: \"See file page\",\n    },\n    shortFact:\n      \"Diplodocus had a very long tail. Some scientists think the tip could make a loud whip‑like snap!\",\n    details:\n      \"Diplodocus was a giant plant‑eater with a super‑long neck and tail. Its bones show strong muscles attached along the backbone spines.\",\n    howToSay: \"dih-PLOD-uh-kuss\",\n  }\n];\n\nconst Palette = {
   sand: "#F7E7CE",
   sandstone: "#E9D5B6",
   cocoa: "#6B4F3A",
@@ -145,9 +215,7 @@ export default function DinoMuseum() {
   const prev = () =>
     setView((v) => ({ type: "detail", index: (v.index - 1 + FOSSILS.length) % FOSSILS.length }));
 
-  return (
-    <div
-      className="min-h-screen w-full"
+  rin-h-screen w-full"
       style={{ background: `radial-gradient(60% 60% at 50% 30%, ${Palette.sand} 0%, ${Palette.sandstone} 60%, ${Palette.sandstone})` }}
     >
       <header className="sticky top-0 z-10 backdrop-blur bg-white/40 border-b border-white/50">
@@ -190,9 +258,7 @@ export default function DinoMuseum() {
           <p>
             This site is designed for ages 6–8. Text is short and friendly, buttons are large, and the optional
             "Read to me" feature helps early readers.
-          </p>
-        </div>
-      </footer>
+  er>
     </div>
   );
 }
@@ -228,7 +294,7 @@ function Gallery({ goDetail }) {
               <span className="text-3xl" aria-hidden>{f.emoji}</span>
               <h3 className="text-lg md:text-xl font-bold text-stone-800">{f.name}</h3>
             </div>
-            <div className="mt-3">{f.svg}</div>
+            <div className=\"mt-3\">\n              {f.image ? (\n                <img src={f.image.src} alt={f.image.alt} loading=\"lazy\" decoding=\"async\" className=\"w-full h-40 object-cover rounded-xl border border-stone-200\" />\n              ) : (\n                f.svg\n              )}\n            </div>
             <p className="mt-3 text-stone-700 text-base">{f.shortFact}</p>
             <span className="mt-4 inline-flex items-center gap-2 self-start px-4 py-2 rounded-2xl bg-amber-100 border border-amber-200 text-amber-900 font-semibold">
               Learn More →
@@ -272,7 +338,7 @@ function FossilPage({ fossil, index, next, prev, goHome, speak }) {
         </div>
       </div>
 
-      <div className="mt-4">{fossil.svg}</div>
+      <figure className=\"mt-4\">\n        {fossil.image ? (\n          <>\n            <img\n              src={fossil.image.src}\n              alt={fossil.image.alt}\n              loading=\"eager\"\n              className=\"w-full max-h-80 object-contain rounded-2xl bg-white border border-stone-200\"\n            />\n            <figcaption className=\"mt-2 text-xs text-stone-600\">\n              Image: {fossil.image.credit} — <span className=\"underline decoration-dotted\">{fossil.image.source}</span>. License: {fossil.image.license}.\n            </figcaption>\n          </>\n        ) : (\n          fossil.svg\n        )}\n      </figure>
 
       <div className="mt-4 grid gap-3 md:grid-cols-2">
         <FactCard title="Quick Fact" body={fossil.shortFact} />
